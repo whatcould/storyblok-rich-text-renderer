@@ -142,7 +142,7 @@ export function createRenderer(options?: Partial<RendererOptions>) {
     const components: RenderedNode[] = []
 
     node.attrs.body.forEach((body) => {
-      const { component, _uid, ...fields } = body
+      const { component } = body
       const resolver = resolvers.components[component]
 
       if (resolver) {

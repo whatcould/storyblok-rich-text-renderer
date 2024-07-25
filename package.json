@@ -4,7 +4,6 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "pre-commit": "pnpm run lint:fix",
     "format": "prettier --write \"**/*.{ts,js,vue}\"",
