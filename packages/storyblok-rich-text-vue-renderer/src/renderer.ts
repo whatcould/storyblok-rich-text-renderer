@@ -147,7 +147,7 @@ export function createRenderer(options?: Partial<RendererOptions>) {
 
       if (resolver) {
         components.push(
-          resolver({ id: node.attrs.id, component, _uid, fields }),
+          h(resolver, { props: body })
         )
       } else {
         components.push(resolvers[NodeTypes.COMPONENT]())
